@@ -1,12 +1,24 @@
 
     GIT
 
-Introduction
+Chapters
+1: Terminal
+2: Git Repo
+    - working on local repo only
+3: Branching
+    - create branch
+    - checking out branches
+    - merging
+4: Remote Repo
+    - limitations of local repo
+    - why use remote repo
+    - introduce github
+    - work with remote repo
+
+Terminal
 
     Learing Objectives:
 
-        Why to use version control
-        An overview of git and how it works with your files
         Overview of your computer's file system and its tree-like structure
             => how this fits in with terminal, git
         Understanding the terminal
@@ -34,12 +46,25 @@ Introduction
                 want to create a "working directory" for our project
             - explain how we use git to create "snapshots" of a directory, and that directory's children; a structure
                 that will compose our "git repo"
-            - 
-
 
     Assignments:
         
         Terminal Game (Terminus)
+
+Git Repo
+
+    Learning Objectives:
+
+        Why to use version control
+        An overview of git and how it works with your files
+        .gitignore
+        Manage the basics of a git repo
+        Understanding the stages of your changes 
+            tracked files, adding files to "index", commiting, reverting, pushing, pulling
+    
+    Content Outline
+
+    Assignments
 
         Read the man pages!
             - run the following commands in your terminal
@@ -51,20 +76,6 @@ Introduction
                 man git-remote
             - read what you find interesting, but understand these resources are there for you
 
-    
-
-Basics
-
-    Learning Objectives:
-        .gitignore
-        Manage the basics of a git repo
-        Understanding the stages of your changes 
-            tracked files, adding files to "index", commiting, reverting, pushing, pulling
-    
-    Content Outline
-
-    Assignments
-
         My first repo
             - initialize repository in empty directory
             - add a remote repo link (origin)
@@ -73,15 +84,22 @@ Basics
             - commit the change
             - push the change up to your remote repo
 
-Next Steps
+Branching
 
     Learning Objectives:
-        Understand more complex git operations
-            branch, merge
-        Get familiar with shared git repos
-        Gain experience resolving file conflicts
+        Branches
+            - git branch, git checkout
+        Master Branch
+        
 
     Content Outline
 
     Assignements
                 
+
+Remote Repos
+    
+    Learning Objectives:
+
+        Get familiar with shared git repos
+        Gain experience resolving file conflicts
