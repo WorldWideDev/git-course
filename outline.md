@@ -1,15 +1,15 @@
 
-    GIT
+# GIT
 
-Chapters
-1: Terminal
-2: Git Repo
-    - working on local repo only
-3: Branching
-    - create branch
-    - checking out branches
-    - merging
-4: Remote Repo
+## Chapters
+#### 1: Terminal
+#### 2: Git Repo
+* working on local repo only
+#3: Branching
+#   - create branch
+#   - checking out branches
+#   - merging
+#: Remote Repo
     - limitations of local repo
     - why use remote repo
     - introduce github
@@ -37,15 +37,15 @@ Terminal
         terminal basics (UNIX)
 
     Videos:
+
+        Introduction:
+            - show face over backdrop
+            -         
+
         Your File System (Terminal)
             - explain tree structure
             - map terminal commands to example "tree"
 
-        The Git Repo (Git Basics)
-            - show tree example (same as before perferrably) from eariler video, and why we would 
-                want to create a "working directory" for our project
-            - explain how we use git to create "snapshots" of a directory, and that directory's children; a structure
-                that will compose our "git repo"
 
     Assignments:
         
