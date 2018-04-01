@@ -16,19 +16,19 @@
 ## Chapter: Terminal Basics
 ### Learing Objectives:
 * Overview of your computer's file system and its tree-like structure
-#### => how this fits in with terminal, git
+#### ** how this fits in with terminal, git
 * Understanding the terminal
 ### Content Outline:
 * What is git and why use it?
 * installation
 * git and GitHub (high level)
-#### => Repositories
-##### ==> Remote/local
-#### => Structure of git repo
-##### ==> Branches
-##### ==> Commits
-### Videos:
-#### Introduction:
+#### Repositories
+##### Remote/local
+#### Structure of git repo
+##### Branches
+##### Commits
+##### Videos:
+###### Introduction:
 * show face over backdrop
 #### Your File System (Terminal)
 * explain tree structure
@@ -44,7 +44,7 @@
 ### Content Outline
 ### Assignments
 * Read the man pages!
- - run the following commands in your terminal
+** run the following commands in your terminal
 ```
      man git
      man gittutorial
