@@ -1,0 +1,33 @@
+<h1>"Ignoring" files from your local repository</h1>
+<p>
+    There will be times when you may wish to prevent files in your project from being included in your repo.  As few notable cases for this is:
+</p>
+<ul>
+    <li>There is sensitive information that you require for development, but do not wish the outside world to see.  An example of this would be an API key, say for Google Maps.  You need the API key for Google to authenticate your usage of the API, but you do not want this API key to exist on your public GitHub repo.  If someone needs your API key, they can get it from you - or get their own.  If you need it at some other point in time - say when you are deploying your project - you can just add it then.</li>
+    <li>Large package directories.  There are times where you will be using external development packages that will be installed to your project directory.  It is unnecessary to push what could end up being GBs of software files up to your remote GitHub repo.  Someone could clone your repo, and easily install the required packages themselves.</li>
+</ul>
+<p>This can be done by including a simple text file called <code>.gitignore</code> inside your project's root directory (the name of this file - and its location - has to be precise, so that git knows to use it).  Then, you add lines to this file for files or directories you wish to ignore from your repository.  These files/directories will simply be hidden from the repo itself, and will not get committed/pushed to any remote repository.  If a directory is ignored, all of the contents of that directory will be also ignored.  The syntax for this file is very simple to pick up, but with pattern-matching can get as complex as you need.  Start by understanding the basics, and check out the more powerful stuff as you require.</p>
+<h3>.gitignore example:</h3>
+<pre data-language="bash">
+# ignores any file named "secret.txt"
+secret.txt
+
+# ignores any directory named "secrets"
+secrets/
+
+# ignores a file named "hidden.txt" located at the root of your working directory
+/hidden.txt
+
+# ignores a directory called "node_modules" located at the root of your working directory
+/node_modules/
+
+# ignores any file with a .png extension
+*.png
+
+# ignores any file or directory that begins in "cache", such as cache-file-01, cached_assets/, etc.
+cache*
+
+# ignores any file or directory that ends in "data", such as project_data/, big_file_of_data
+*data
+
+</pre>

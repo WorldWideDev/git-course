@@ -68,7 +68,11 @@
 - **(TODO)** The Git Repository
     - 1/2 Pen on Paper
     - 2/2 Screencap
-    - Overview how git works with your project files 
+    - Overview how git works with your project files
+    - Emphesis on concepts rather than commands:
+        - The "working tree"
+        - Why it's good to treat your development projects as their own tree, not just when using git
+        - How git tracks files, and which files are tracked 
 - **(TODO)** The States of Git
     - 1/2 Pen on Paper
     - 2/2 Screencap

@@ -1,0 +1,462 @@
+<h1>Basic Command Prompt Commands</h1>
+
+<p>
+    First: Folder = Directory. These terms are synonymous, and we will be intentionally using both, just remember a directory is the same as a folder, and vice versa.
+</p>
+
+<h3>Where am I???</h3>
+
+<p>
+    <em>cd</em>
+
+    &nbsp;stands for "Change Directory" though we can use it without any other commands to tell us the current directory we are in for&nbsp;windows command line terminal.&nbsp;Use this command any time you are unsure where you are currently in your file structure.&nbsp;
+
+    <strong>
+        <br>
+    </strong>
+</p>
+
+<pre
+    data-language="shell"
+    class="code-toolbar language-shell"
+>
+    <code class="language-shell">
+        c:\Users\Jonathan&gt;cd
+c:\Users\Jonathan
+    </code>
+
+    <div class="toolbar"></div>
+</pre>
+
+<h3>List files</h3>
+
+<p>
+    Use&nbsp;
+
+    <em>dir</em>
+
+    &nbsp;command to see all the files and folders that are in your current directory.
+</p>
+
+<pre
+    data-language="shell"
+    class="code-toolbar language-shell"
+>
+    <code class="language-shell">
+        C:\Users\Jonathan&gt;dir
+ Volume in drive C is OS
+ Volume Serial Number is 67EF-C36B
+ Directory of C:\Users\Jonathan
+01/16/2017  08:07 PM    &lt;DIR&gt;          .
+01/16/2017  08:07 PM    &lt;DIR&gt;          ..
+11/01/2016  03:47 PM    &lt;DIR&gt;          .atom
+05/01/2016  08:21 PM                32 .bashrc
+11/29/2016  07:52 AM             8,698 .bash_history
+05/01/2016  08:21 PM                99 .bash_profile
+06/07/2016  02:41 PM    &lt;DIR&gt;          .config
+09/29/2016  11:01 AM               748 .dbshell
+06/28/2016  06:53 AM    &lt;DIR&gt;          .gem
+03/22/2016  04:31 PM               338 .gitconfig
+05/01/2016  08:26 PM    &lt;DIR&gt;          .idlerc
+05/05/2016  08:32 AM                73 .minttyrc
+06/12/2016  10:24 PM                 0 .mongorc.js
+06/24/2016  06:53 AM    &lt;DIR&gt;          .node-gyp
+06/08/2016  07:41 PM                27 .node_repl_history
+07/01/2016  09:39 AM               108 .npmrc
+03/22/2016  04:24 PM    &lt;DIR&gt;          .p4qt
+04/22/2016  07:20 AM    &lt;DIR&gt;          .ssh
+03/21/2016  07:52 PM               757 .viminfo
+12/07/2016  09:13 PM    &lt;DIR&gt;          .VirtualBox
+11/22/2013  03:57 PM                 0 agent.log
+01/13/2017  08:54 AM    &lt;DIR&gt;          Contacts
+01/16/2017  03:11 PM    &lt;DIR&gt;          Desktop
+01/13/2017  08:54 AM    &lt;DIR&gt;          Documents
+01/17/2017  11:06 AM    &lt;DIR&gt;          Downloads
+01/13/2017  08:54 AM    &lt;DIR&gt;          Favorites
+05/05/2014  11:45 AM    &lt;DIR&gt;          Google Drive
+10/31/2016  01:50 PM    &lt;DIR&gt;          JonathanBenAmmi
+01/13/2017  08:54 AM    &lt;DIR&gt;          Links
+01/13/2017  08:54 AM    &lt;DIR&gt;          Music
+08/05/2015  05:32 AM    &lt;DIR&gt;          OneDrive
+01/13/2017  08:54 AM    &lt;DIR&gt;          Pictures
+11/13/2013  05:08 AM    &lt;DIR&gt;          Roaming
+01/13/2017  08:54 AM    &lt;DIR&gt;          Saved Games
+01/13/2017  08:54 AM    &lt;DIR&gt;          Searches
+09/14/2016  03:59 PM    &lt;DIR&gt;          SkyDrive
+12/23/2015  04:38 PM    &lt;DIR&gt;          Tracing
+01/13/2017  08:54 AM    &lt;DIR&gt;          Videos
+12/07/2016  08:24 AM    &lt;DIR&gt;          VirtualBox VMs
+              11 File(s)          10,880 bytes
+              28 Dir(s)  759,995,834,368 bytes free
+    </code>
+
+    <div class="toolbar"></div>
+</pre>
+
+<h3>Traversing a folder structure</h3>
+
+<p>
+    File systems are stored as a hierarchy, which means most directories (folders) have either a parent folder, or a child folder, or both!
+</p>
+
+<p>
+    To traverse down into a child folder from the current directory, you would use&nbsp;&nbsp;
+
+    <em>cd [folder_name]</em>
+
+    &nbsp;which translates to: "Change directory to [folder_name]" where [folder_name] is the name of the child folder.
+</p>
+
+<pre
+    data-language="source"
+    class="code-toolbar language-source"
+>
+    <code class="language-source">
+        cd [folder name]
+C:\Users\Jonathan&gt;cd JonathanBenAmmi
+C:\Users\Jonathan\JonathanBenAmmi&gt;
+    </code>
+
+    <div class="toolbar"></div>
+</pre>
+
+<p>
+    To traverse up to a parent folder from where you currently are, it's
+
+    <em>cd ..</em>
+
+    &nbsp;(Pronounced: "cd dot dot")
+</p>
+
+<pre
+    data-language="source"
+    class="code-toolbar language-source"
+>
+    <code class="language-source">
+        cd ..
+C:\Users\Jonathan\JonathanBenAmmi&gt;cd ..
+C:\Users\Jonathan&gt;
+    </code>
+
+    <div class="toolbar"></div>
+</pre>
+
+<p>
+    <em>cd \</em>
+
+    &nbsp;and&nbsp;
+
+    <em>cd /</em>
+
+    &nbsp;will change the current directory to the root directory of your computer. From this folder, you can access your application folders and the entire contents of the drive. Pronounced: "c d slash"
+</p>
+
+<pre
+    data-language="shell"
+    class="code-toolbar language-shell"
+>
+    <code class="language-shell">
+        cd / or cd \
+C:\Users\Jonathan\JonathanBenAmmi&gt;cd /
+C:\&gt;
+C:\Users\Jonathan&gt;cd \
+C:\&gt;
+    </code>
+
+    <div class="toolbar"></div>
+</pre>
+
+<h3>Making a new folder</h3>
+
+<p>
+    The command
+
+    <em>md [folder name]</em>
+
+    will make a new directory named&nbsp;&nbsp;
+
+    <em>newFolder</em>
+
+    . Whatever argument you pass into this command will be the name of your new file. After making the directory, you could run&nbsp;
+
+    <em>cd newFolder</em>
+
+    &nbsp;to enter into that directory or use the
+
+    <em>dir</em>
+
+    command to see the new folder you created in&nbsp;your current directory.
+</p>
+
+<pre
+    data-language="shell"
+    class="code-toolbar language-shell"
+>
+    <code class="language-shell">
+        C:\Users\Jonathan\JonathanBenAmmi&gt;md newFolder
+    </code>
+
+    <div class="toolbar"></div>
+</pre>
+
+<h3>Delete a folder</h3>
+
+<p>
+    If you try to delete a folder with contents inside you will get an error! Our computer wants us to say more explicitly to delete this directory and everything inside of it by passing the &nbsp;
+
+    <em>/s&nbsp;</em>
+
+    option.&nbsp;
+
+    <strong>Be careful with this command</strong>
+
+    &nbsp;as it could&nbsp;accidentally delete files you didn't intend to delete or delete some configuration files that you don't&nbsp;want to delete at all!
+</p>
+
+<h4>
+    <strong>empty folder</strong>
+</h4>
+
+<pre
+    data-language="shell"
+    class="code-toolbar language-shell"
+>
+    <code class="language-shell">
+        rd [folder name]
+C:\Users\Jonathan\JonathanBenAmmi&gt;rd newFolder
+    </code>
+
+    <div class="toolbar"></div>
+</pre>
+
+<h4>
+    <strong>non-empty folder</strong>
+</h4>
+
+<pre
+    data-language="shell"
+    class="code-toolbar language-shell"
+>
+    <code class="language-shell">
+        rd /s [folder name]
+C:\Users\Jonathan\JonathanBenAmmi&gt;rd /s newFolder
+    </code>
+
+    <div class="toolbar"></div>
+</pre>
+
+<h3>
+    Creating a new file/Copying a file
+</h3>
+
+<p>
+    The&nbsp;
+
+    <em>copy</em>
+
+    &nbsp;command, in essence, is telling Windows to copy what is in parameter one into a file you specify and because the file specified doesn't exist, Windows will create it. If your first parameter is NUL, it will create an empty file.&nbsp;
+</p>
+
+<p>
+    After creating a new file run&nbsp;
+
+    <em>dir</em>
+
+    &nbsp;and you will see your new files in the current directory!
+</p>
+
+<h4>Empty file</h4>
+
+<pre
+    data-language="shell"
+    class="code-toolbar language-shell"
+>
+    <code class="language-shell">
+        copy NUL [file name]
+C:\Users\Jonathan\JonathanBenAmmi&gt;copy NUL readME.txt
+    </code>
+
+    <div class="toolbar"></div>
+</pre>
+
+<h4>Copy file</h4>
+
+<pre
+    data-language="shell"
+    class="code-toolbar language-shell"
+>
+    <code class="language-shell">
+        copy [original file name] [copy file name]
+C:\Users\Jonathan\JonathanBenAmmi&gt;copy readME.txt newReadMe.txt
+    </code>
+
+    <div class="toolbar"></div>
+</pre>
+
+<h3>Moving a file</h3>
+
+<p>
+    moving a file using the
+
+    <em>
+        move [current path\file] [new path\file]
+    </em>
+
+    &nbsp;command will allow you to move a file from one directory to another. Please note you need to put the pathing in so it knows where to find the file and where to move it to.
+</p>
+
+<pre
+    data-language="shell"
+    class="code-toolbar language-shell"
+>
+    <code class="language-shell">
+        move [current path\file name] [new path\file name]
+C:\Users\Jonathan\JonathanBenAmmi&gt;move .\readME.txt ..\readMe.txt
+    </code>
+
+    <div class="toolbar"></div>
+</pre>
+
+<h3>Removing a file</h3>
+
+<p>
+    deleting a file using the
+
+    <em>del</em>
+
+    command will remove the file without any prompt. if you want to be asked if you should delete the file you can add in the /p to the command
+</p>
+
+<pre
+    data-language="shell"
+    class="code-toolbar language-shell"
+>
+    <code class="language-shell">
+        del [file name]
+C:\Users\Jonathan\JonathanBenAmmi&gt;del readMe.txt
+del /p [file name]
+C:\Users\Jonathan\JonathanBenAmmi&gt;del /p readMe.txt
+C:\Users\Jonathan\JonathanBenAmmi\readMe.txt,  Delete? (Y/N)?
+    </code>
+
+    <div class="toolbar"></div>
+</pre>
+
+<h3>Renaming a file</h3>
+
+<p>
+    The&nbsp;
+
+    <em>ren</em>
+
+    &nbsp;command is shorthand for "rename" and will rename the file specified by the first parameter to the name specified in the second parameter.
+</p>
+
+<p>
+    After you run the command you can use
+
+    <em>dir</em>
+
+    to see the change in the current directory.
+</p>
+
+<pre
+    data-language="shell"
+    class="code-toolbar language-shell"
+>
+    <code class="language-shell">
+        ren [old file name] [new file name]
+C:\Users\Jonathan\JonathanBenAmmi&gt;ren readMe.txt readYou.txt
+    </code>
+
+    <div class="toolbar"></div>
+</pre>
+
+<h3>
+    Copying and Moving a directory
+</h3>
+
+<p>
+    Use
+
+    <em>
+        xcopy [source folder] [destination]&nbsp;
+    </em>
+
+    to copy a folder&nbsp;and all of its contents to another location. You will need to add the following commands if the destination folder does not already exist
+</p>
+
+<p>
+    <strong>/s</strong>
+
+    : Copies directories and subdirectories, unless they are empty.
+</p>
+
+<p>
+    <strong>/e</strong>
+
+    : Copies all subdirectories, even if they are empty.
+</p>
+
+<p>
+    <strong>/i :</strong>
+
+    If Source is a directory or contains wildcards and Destination does not exist, xcopy assumes destination specifies a directory name and creates a new directory. Then, xcopy copies all specified files into the new directory. By default, xcopy prompts you to specify whether Destination is a file or a directory.
+</p>
+
+<p>
+    Use
+
+    <em>
+        move [source folder] [new location]&nbsp;
+    </em>
+
+    to physically move a file or folder to a new location.
+</p>
+
+<pre
+    data-language="shell"
+    class="code-toolbar language-shell"
+>
+    <code class="language-shell">
+        xcopy [original folder] [copy folder]
+C:\Users\Jonathan\JonathanBenAmmi&gt;xcopy .\newFolder .\folderCopy /e /s /i
+move [source folder] [new location]
+C:\Users\Jonathan\JonathanBenAmmi&gt;move myfile.html .\newFolder
+    </code>
+
+    <div class="toolbar"></div>
+</pre>
+
+<h3>
+    Opening the current directory in File Explorer
+</h3>
+
+<pre
+    data-language="shell"
+    class="code-toolbar language-shell"
+>
+    <code class="language-shell">
+        start .
+C:\Users\Jonathan\JonathanBenAmmi&gt;start .
+    </code>
+
+    <div class="toolbar"></div>
+</pre>
+
+<h3>
+    <em>In Summary</em>
+</h3>
+
+<p>
+    Obviously, this is just the tip of the iceberg in the world of commands, but these are the basic commands you will be using initially. For a more detailed list of commands, see the&nbsp;link below:
+</p>
+
+<p>
+    <a
+        href="https://en.wikipedia.org/wiki/List_of_DOS_commands"
+        target="new"
+    >
+        List of Command Line (Windows) commands.
+    </a>
+</p>
