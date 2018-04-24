@@ -25,6 +25,17 @@
 ### Assignments:
 - Using Terminal Commands
 - Terminal Game (Terminus)
+### Next Steps:
+- Outro video demoing some cool terminal tricks
+- Vim module
+- Advanced Terminal
+    - Piping
+        - grep/sed
+    - ssh
+    - UNIX Concepts
+        - users/groups
+        - file permissions/ownership
+            - permission types 
 ---
 ## Chapter: Git Repo
 ### Learning Objectives:
